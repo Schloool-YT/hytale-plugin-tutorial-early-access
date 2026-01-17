@@ -1,5 +1,6 @@
 plugins {
     id("java")
+    id("io.moonlightdevelopment.runhytale") version "latest.release"
 }
 
 group = "de.schloool"

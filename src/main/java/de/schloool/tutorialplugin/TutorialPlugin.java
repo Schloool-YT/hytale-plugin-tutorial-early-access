@@ -13,6 +13,7 @@ public class TutorialPlugin extends JavaPlugin {
     protected void setup() {
         super.setup();
         getLogger().atInfo().log("Tutorial-Plugin durchläuft setup...");
+        getLogger().atInfo().log("Mal sehen, wie lange das dauert...");
     }
 
     @Override

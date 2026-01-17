@@ -1,4 +1,5 @@
 /libs/HytaleServer.jar
+/run
 
 .gradle
 build/
