@@ -1,0 +1,7 @@
+{
+  "Name": "TutorialPlugin",
+  "Group": "de.schloool",
+  "Version": "1.0.0",
+  "Description": "Das ist mein Tutorial-Plugin",
+  "Main": "de.schloool.tutorialplugin.TutorialPlugin"
+}
