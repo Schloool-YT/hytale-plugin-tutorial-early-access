@@ -2,6 +2,7 @@ package de.schloool.tutorialplugin;
 
 import com.hypixel.hytale.server.core.plugin.JavaPlugin;
 import com.hypixel.hytale.server.core.plugin.JavaPluginInit;
+import de.schloool.tutorialplugin.commands.JumpCommand;
 import de.schloool.tutorialplugin.commands.TestCommand;
 import org.checkerframework.checker.nullness.compatqual.NonNullDecl;
 
@@ -17,6 +18,7 @@ public class TutorialPlugin extends JavaPlugin {
         getLogger().atInfo().log("Mal sehen, wie lange das dauert...");
 
         getCommandRegistry().registerCommand(new TestCommand());
+        getCommandRegistry().registerCommand(new JumpCommand());
     }
 
     @Override
