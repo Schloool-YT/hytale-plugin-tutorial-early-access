@@ -6,6 +6,7 @@ import com.hypixel.hytale.server.core.plugin.JavaPluginInit;
 import de.schloool.tutorialplugin.commands.JumpCommand;
 import de.schloool.tutorialplugin.commands.TestCommand;
 import de.schloool.tutorialplugin.listeners.InventoryChangeChatListener;
+import de.schloool.tutorialplugin.systems.PlaceChalkBlockSystem;
 import org.checkerframework.checker.nullness.compatqual.NonNullDecl;
 
 public class TutorialPlugin extends JavaPlugin {
@@ -22,7 +23,9 @@ public class TutorialPlugin extends JavaPlugin {
         getCommandRegistry().registerCommand(new TestCommand());
         getCommandRegistry().registerCommand(new JumpCommand());
 
-        getEventRegistry().registerGlobal(LivingEntityInventoryChangeEvent.class, InventoryChangeChatListener::onInventoryChange);
+        // getEventRegistry().registerGlobal(LivingEntityInventoryChangeEvent.class, InventoryChangeChatListener::onInventoryChange);
+
+        getEntityStoreRegistry().registerSystem(new PlaceChalkBlockSystem());
     }
 
     @Override
